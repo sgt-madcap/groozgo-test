@@ -1,0 +1,94 @@
+@import "variables";
+
+.empty-layout {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 5rem;
+  height: 100vh}
+
+.inputs-wrapper {
+  width: $inputs-wrapper-width;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.app-content{
+  padding-top: 64px;
+  position: relative}
+
+.auth-card{
+  width: 500px
+}
+
+.auth-submit{
+  width: 100%
+}
+
+.helper-text.invalid{
+  color: $error-color
+}
+
+.app-page{
+  padding: $page-padding
+}
+
+.app-main-layout{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column
+}
+
+.app-loader{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 2rem}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.navbar {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px !important;padding:0 2rem;z-index:99;
+  background: $main-color;
+
+  .nav-wrapper {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .app-header {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  padding-top: 0 !important;
+  background: $footer-color !important;
+}
