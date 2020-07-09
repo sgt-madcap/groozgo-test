@@ -8,11 +8,11 @@
           <label for="bank">БИК</label>
         </div>
         <div class="input-field">
-          <input id="bankName" type="text" v-model="bankName" />
+          <input id="bankName" type="text" disabled v-model="bankName" />
           <label for="bankName">Наименование банка</label>
         </div>
         <div class="input-field">
-          <input id="korr" type="text" v-model="korr" />
+          <input id="korr" type="text" disabled v-model="korr" />
           <label for="korr">Корреспондентский счет</label>
         </div>
       </div>
